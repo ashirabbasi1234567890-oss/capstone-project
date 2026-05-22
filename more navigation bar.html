@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Navbar</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* First Navbar */
+
+        .topnav {
+            background-color: black;
+            overflow: hidden;
+        }
+
+        .topnav a {
+            float: left;
+            color: white;
+            text-decoration: none;
+            padding: 12px 18px;
+            font-size: 16px;
+        }
+
+        .topnav a:hover {
+            background-color: gray;
+            color: black;
+        }
+
+        /* Main Navbar */
+
+        nav {
+            overflow: hidden;
+            background-color: aqua;
+        }
+
+        nav a {
+            float: left;
+            color: blueviolet;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        nav a:hover {
+            background-color: palevioletred;
+            color: black;
+        }
+
+        nav a.active {
+            background-color: blue;
+            color: white;
+        }
+
+        /* Sidebar Navbar */
+
+        .sidebar {
+            width: 200px;
+            height: 100vh;
+            background-color: #333;
+            position: fixed;
+            top: 95px;
+            left: 0;
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+
+        /* Content */
+
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Top Navbar -->
+
+    <div class="topnav">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+        <a href="#">YouTube</a>
+    </div>
+
+    <!-- Main Navbar -->
+
+    <nav>
+        <a class="active" href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Gallery</a>
+        <a href="#">Services</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Blog</a>
+        <a href="#">Team</a>
+        <a href="#">Contact Us</a>
+    </nav>
+
+    <!-- Sidebar Navbar -->
+
+    <div class="sidebar">
+        <a href="#">Dashboard</a>
+        <a href="#">Profile</a>
+        <a href="#">Settings</a>
+        <a href="#">Messages</a>
+        <a href="#">Logout</a>
+    </div>
+
+    <!-- Content -->
+
+    <div class="content">
+        <h1>Welcome</h1>
+        <p>This project uses multiple navigation bars.</p>
+    </div>
+
+</body>
+
+</html>
